@@ -43,6 +43,7 @@ Node Nodes
 			{  ParticipantName "Eina" EventType "EDlgEventType::DlgEventModifyBool" EventName "Visible" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
 			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyBool" EventName "Visible" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
 			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyName" EventName "Expression" IntValue 0 FloatValue 0.0 NameValue "teddy_walk_1" bDelta False bValue False }
+			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyName" EventName "Position_X" IntValue 0 FloatValue 0.0 NameValue "Left" bDelta False bValue False }
 		}
 		Children
 		{
@@ -113,6 +114,7 @@ Node Nodes
 		{
 			{  ParticipantName "Widget" EventType "EDlgEventType::DlgEventModifyName" EventName "Show_Background" IntValue 0 FloatValue 0.0 NameValue "Fantasy-Forrest2" bDelta False bValue False }
 			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyBool" EventName "Visible" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue True }
+			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyName" EventName "Position_X" IntValue 0 FloatValue 0.0 NameValue "Right" bDelta False bValue False }
 		}
 		Children { {  TargetIndex 6 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
 	}
@@ -177,6 +179,7 @@ Node Nodes
 		{
 			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyClassBoolVariable" EventName "Introduced" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue True }
 			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyName" EventName "Expression" IntValue 0 FloatValue 0.0 NameValue "teddy_ducking_1" bDelta False bValue False }
+			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventEvent" EventName "Jump" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
 		}
 		Children { {  TargetIndex 10 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
 	}
