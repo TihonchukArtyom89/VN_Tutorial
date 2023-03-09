@@ -1,0 +1,733 @@
+DlgVersion 7
+DlgName "Test_Dlg"
+DlgGuid {  A 75899538 B 1224359148 C 866161558 D -1495418327 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	NodeData ""
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	GenericData ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "Yuri" ParticipantClass "/Game/Widgets/W_Yuri.W_Yuri_C" }
+	{  ParticipantName "Game Instance" ParticipantClass "/Game/VN_Game_Instance.VN_Game_Instance_C" }
+	{  ParticipantName "Eina" ParticipantClass "/Game/Widgets/W_Eina.W_Eina_C" }
+	{  ParticipantName "Widget" ParticipantClass "" }
+	{  ParticipantName "Teddy" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "Demo Mode"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Game Instance"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents
+		{
+			{  ParticipantName "Widget" EventType "EDlgEventType::DlgEventModifyName" EventName "Show_Background" IntValue 0 FloatValue 0.0 NameValue "Modern-School1" bDelta False bValue False }
+			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventModifyBool" EventName "Visible" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
+			{  ParticipantName "Eina" EventType "EDlgEventType::DlgEventModifyBool" EventName "Visible" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
+			{  ParticipantName "None" EventType "EDlgEventType::DlgEventEvent" EventName "None" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
+		}
+		Children
+		{
+			{  TargetIndex 1 Text "Auto\Skip Mode" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 2 Text "Stable Build" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 3 Text "Animated Character" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "Hello, we`re going to be working on our auto and skip functionality today."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents
+		{
+			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventModifyName" EventName "Position_X" IntValue 0 FloatValue 0.0 NameValue "Left" bDelta False bValue False }
+			{  ParticipantName "Eina" EventType "EDlgEventType::DlgEventModifyName" EventName "Position_X" IntValue 0 FloatValue 0.0 NameValue "Right" bDelta False bValue False }
+			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventEvent" EventName "Appear" IntValue 0 FloatValue 0.0 NameValue "Right" bDelta False bValue False }
+			{  ParticipantName "Eina" EventType "EDlgEventType::DlgEventEvent" EventName "Appear" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
+		}
+		Children { {  TargetIndex 4 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "Hello, I`m Yuri!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents
+		{
+			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventModifyName" EventName "Position_X" IntValue 0 FloatValue 0.0 NameValue "Left" bDelta False bValue False }
+			{  ParticipantName "Eina" EventType "EDlgEventType::DlgEventModifyName" EventName "Position_X" IntValue 0 FloatValue 0.0 NameValue "Right" bDelta False bValue False }
+			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventEvent" EventName "Appear" IntValue 0 FloatValue 0.0 NameValue "Right" bDelta False bValue False }
+			{  ParticipantName "Eina" EventType "EDlgEventType::DlgEventEvent" EventName "Appear" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
+			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventEvent" EventName "Jump" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
+			{  ParticipantName "Widget" EventType "EDlgEventType::DlgEventModifyName" EventName "Dissolve" IntValue 0 FloatValue 0.0 NameValue "Modern-Dormroom2" bDelta False bValue False }
+		}
+		Children { {  TargetIndex 5 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 3
+	Node_Speech 
+	{
+		Text "HI! My name is Teddy! I can walk."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Teddy"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 6 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "This is a long series of text."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 7 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 5
+	Node_Speech 
+	{
+		Text "The pot can now used in codex"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents
+		{
+			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventModifyClassBoolVariable" EventName "Introduced" IntValue 0 FloatValue 0.0 NameValue "Introduced" bDelta False bValue True }
+			{  ParticipantName "Game Instance" EventType "EDlgEventType::DlgEventModifyName" EventName "CDX_Pot" IntValue 0 FloatValue 0.0 NameValue "Pot" bDelta False bValue False }
+			{  ParticipantName "Game Instance" EventType "EDlgEventType::DlgEventModifyName" EventName "Update_Codex" IntValue 0 FloatValue 0.0 NameValue "CDX_Yuri" bDelta False bValue False }
+			{  ParticipantName "Widget" EventType "EDlgEventType::DlgEventModifyName" EventName "Dissolve" IntValue 0 FloatValue 0.0 NameValue "Modern-Dormroom1" bDelta False bValue False }
+		}
+		Children
+		{
+			{  TargetIndex 8 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{
+				TargetIndex 9
+				Text ""
+				SpeakerState "None"
+				bIncludeInAllOptionListIfUnsatisfied True
+				Conditions { {  Strength "EDlgConditionStrength::DlgConditionStrengthStrong" ConditionType "EDlgConditionType::DlgConditionIntCall" ParticipantName "None" CallbackName "None" Operation "EDlgOperation::DlgEqual" CompareType "EDlgCompareType::DlgCompareToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue True bLongTermMemory True } }
+			}
+		}
+	}
+	// 6
+	Node_Speech 
+	{
+		Text "Also i can ducking."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Teddy"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 10 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 7
+	Node_Speech 
+	{
+		Text "The only reason it exists is to demonstrate the auto and skip functionality."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 11 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 8
+	Node_Speech 
+	{
+		Text "What do you want to do?(Add new Image to gallery)"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents
+		{
+			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventModifyName" EventName "Position_X" IntValue 0 FloatValue 0.0 NameValue "Right" bDelta False bValue False }
+			{  ParticipantName "Widget" EventType "EDlgEventType::DlgEventModifyName" EventName "Dissolve" IntValue 0 FloatValue 0.0 NameValue "Fantasy-Forrest" bDelta False bValue False }
+		}
+		Children
+		{
+			{  TargetIndex 12 Text "Inspect it" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 13 Text "Leave it Alone" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 14 Text "Breack it" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 9
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+	}
+	// 10
+	Node_End 
+	{
+		OwnerName "Teddy"
+		bCheckChildrenOnEvaluation False
+	}
+	// 11
+	Node_Speech 
+	{
+		Text "Hopefully you`ll be able to follow along and that it`ll all make sense."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 15 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 12
+	Node_Speech 
+	{
+		Text "It`s brown and made from clay."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents { {  ParticipantName "Game Instance" EventType "EDlgEventType::DlgEventModifyName" EventName "CDX_Pot" IntValue 0 FloatValue 0.0 NameValue "Inspect" bDelta False bValue False } }
+		Children { {  TargetIndex 8 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 13
+	Node_Speech 
+	{
+		Text "Maybe you should sell it when it`s worse more money?"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents { {  ParticipantName "Eina" EventType "EDlgEventType::DlgEventModifyName" EventName "Position_X" IntValue 0 FloatValue 0.0 NameValue "Left" bDelta False bValue False } }
+		Children { {  TargetIndex 16 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 14
+	Node_Speech 
+	{
+		Text "Take that pot!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents { {  ParticipantName "Game Instance" EventType "EDlgEventType::DlgEventModifyName" EventName "CDX_Pot" IntValue 0 FloatValue 0.0 NameValue "Break" bDelta False bValue False } }
+		Children { {  TargetIndex 16 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 15
+	Node_Speech 
+	{
+		Text "But if it doesn`t, hopefully just copying what I`m doing will lead to satisfactory results."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 17 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 16
+	Node_Speech 
+	{
+		Text "Do you want to move on to the next chapter?"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children
+		{
+			{  TargetIndex 18 Text "Yes" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 19 Text "No" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 17
+	Node_Speech 
+	{
+		Text "I`m runnig out to stuf of type."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 20 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 18
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents { {  ParticipantName "Widget" EventType "EDlgEventType::DlgEventModifyName" EventName "Start_Script" IntValue 0 FloatValue 0.0 NameValue "Test2_Dlg" bDelta False bValue False } }
+		Children { {  TargetIndex 21 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 19
+	Node_Speech 
+	{
+		Text "You have to at some point!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 16 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 20
+	Node_Speech 
+	{
+		Text "If  anyone has any ideas on what mini-games you`d like to see a tutorial for btw..."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 22 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 21
+	Node_End 
+	{
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+	}
+	// 22
+	Node_Speech 
+	{
+		Text "Please let me know in the comments below."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 23 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 23
+	Node_Speech 
+	{
+		Text "Skip mode should now stop at this node because we have options to choose from."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children
+		{
+			{  TargetIndex 24 Text "The route with a lot of text" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 25 Text "The route with just 1 block of text" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 24
+	Node_Speech 
+	{
+		Text "Honestly  I have no idea what i`m going to be doing for the minigame."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 26 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 25
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 27 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 26
+	Node_Speech 
+	{
+		Text "I was thinking I could do a match 3 game, because they seem to be popular mini games in visual novels ..."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 28 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 27
+	Node_End 
+	{
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+	}
+	// 28
+	Node_Speech 
+	{
+		Text "But it turns out that Epic already has a match 3 example out there."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 29 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 29
+	Node_Speech 
+	{
+		Text "Some of it done with c++,but I don`t want to do a tutorial for something that`s already out here."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 30 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 30
+	Node_Speech 
+	{
+		Text "If I wanted to do that, I would make another first person shooter tutorial."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 31 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 31
+	Node_Speech 
+	{
+		Text "Then I was thinking that maybe I could do a rpg sort of thing."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 32 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 32
+	Node_Speech 
+	{
+		Text "But That would end up being a lot more complicated more complicated than I want this to be."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 33 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 33
+	Node_Speech 
+	{
+		Text "Depending on how long it`s going to be, we might end up needing to make an inventory system, quest system etc."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 34 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 34
+	Node_Speech 
+	{
+		Text "Thought I`m confident I could do it myself, I`m sertain I`ll mess up a lot in the recordings, especialy a series gets longer and longer."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 35 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 35
+	Node_Speech 
+	{
+		Text "Plus, there are already a lot of videos out there on quest and inventory systems in Unreal 4."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 36 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 36
+	Node_Speech 
+	{
+		Text "I don`t personally agree with the way a lot them do stuff.."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 37 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 37
+	Node_Speech 
+	{
+		Text "But what do I know? For all I know, I am the that`s crazy, and the rest of world is sane."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 38 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 38
+	Node_Speech 
+	{
+		Text "Anyways that should enough lines by now right?"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 39 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 39
+	Node_Speech 
+	{
+		Text "But seriosly, if you have any ideas on mini games you`d to see let me know."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 40 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 40
+	Node_Speech 
+	{
+		Text "Rock Paper Scissors would be too easy and uniteresting, but a full blown rpg  would be take too long."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 41 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 41
+	Node_Speech 
+	{
+		Text "Also,if you just want to see someting specific in the next video, let me know as well."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 42 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 42
+	Node_Speech 
+	{
+		Text "Honestly, I`m just doing stuff based on what happens to pop up in my head. I didn`t really have a specisic order in my mind when I started these videos."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 43 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 43
+	Node_Speech 
+	{
+		Text "Well, except for switching to 3D art at the end. But that`s just because I want to put off making crappy models as long as posible for this series."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 44 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 44
+	Node_Speech 
+	{
+		Text "But if you really want to know what we`re going to be doing, it`s just going to be using Render Targets as the background images instead of prdemade images."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 45 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 45
+	Node_Speech 
+	{
+		Text "That way, we can still use the scene transistions we set up earlier and still use many 2D images we want to use, without being forced choose 2D or 3D for the  backgrounds."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 46 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 46
+	Node_Speech 
+	{
+		Text "I`m going to typing now."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 47 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 47
+	Node_End 
+	{
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+	}
+}

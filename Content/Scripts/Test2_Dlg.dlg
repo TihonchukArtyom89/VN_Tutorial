@@ -1,0 +1,59 @@
+DlgVersion 7
+DlgName "Test2_Dlg"
+DlgGuid {  A -1396816947 B 1209259009 C -1250411385 D -419900868 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	NodeData ""
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	GenericData ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "Yuri" ParticipantClass "/Game/Widgets/W_Yuri.W_Yuri_C" }
+	{  ParticipantName "Widget" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "And here we are at the second chapter!"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		EnterEvents { {  ParticipantName "Widget" EventType "EDlgEventType::DlgEventModifyName" EventName "Show_Background" IntValue 0 FloatValue 0.0 NameValue "Arabian-Bedroom2" bDelta False bValue False } }
+		Children { {  TargetIndex 1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "Too bad that`s all there is to it."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 2 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_End 
+	{
+		OwnerName "Yuri"
+		bCheckChildrenOnEvaluation False
+	}
+}

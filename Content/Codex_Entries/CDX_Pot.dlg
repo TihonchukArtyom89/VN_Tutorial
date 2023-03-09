@@ -1,0 +1,150 @@
+DlgVersion 7
+DlgName "CDX_Pot"
+DlgGuid {  A 2026433362 B 1111018098 C 1601232787 D 1072612708 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	NodeData ""
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	GenericData ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses { {  ParticipantName "Game Instance" ParticipantClass "/Game/VN_Game_Instance.VN_Game_Instance_C" } }
+Node Nodes
+{
+	// 0
+	Node_Selector 
+	{
+		SelectorType "EDlgNodeSelectorType::DlgNodeSelectorFirst"
+		OwnerName "None"
+		bCheckChildrenOnEvaluation True
+		Children
+		{
+			{
+				TargetIndex 1
+				Text ""
+				SpeakerState "None"
+				bIncludeInAllOptionListIfUnsatisfied True
+				Conditions { {  Strength "EDlgConditionStrength::DlgConditionStrengthStrong" ConditionType "EDlgConditionType::DlgConditionEventCall" ParticipantName "Game Instance" CallbackName "Pot" Operation "EDlgOperation::DlgEqual" CompareType "EDlgCompareType::DlgCompareToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue True bLongTermMemory True } }
+			}
+			{  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "Pot"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 3 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "???"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 4 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 3
+	Node_Selector 
+	{
+		SelectorType "EDlgNodeSelectorType::DlgNodeSelectorFirst"
+		OwnerName "None"
+		bCheckChildrenOnEvaluation True
+		Children
+		{
+			{
+				TargetIndex 5
+				Text "Next"
+				SpeakerState "None"
+				bIncludeInAllOptionListIfUnsatisfied True
+				Conditions { {  Strength "EDlgConditionStrength::DlgConditionStrengthStrong" ConditionType "EDlgConditionType::DlgConditionEventCall" ParticipantName "Game Instance" CallbackName "Inspect" Operation "EDlgOperation::DlgEqual" CompareType "EDlgCompareType::DlgCompareToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue True bLongTermMemory True } }
+			}
+			{  TargetIndex 6 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 4
+	Node_End 
+	{
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+	}
+	// 5
+	Node_Speech 
+	{
+		Text "A brown clay pot."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 7 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 6
+	Node_Speech 
+	{
+		Text "A pot."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 7 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 7
+	Node_Selector 
+	{
+		SelectorType "EDlgNodeSelectorType::DlgNodeSelectorFirst"
+		OwnerName "None"
+		bCheckChildrenOnEvaluation True
+		Children
+		{
+			{
+				TargetIndex 8
+				Text "Next"
+				SpeakerState "None"
+				bIncludeInAllOptionListIfUnsatisfied True
+				Conditions { {  Strength "EDlgConditionStrength::DlgConditionStrengthStrong" ConditionType "EDlgConditionType::DlgConditionEventCall" ParticipantName "Game Instance" CallbackName "Break" Operation "EDlgOperation::DlgEqual" CompareType "EDlgCompareType::DlgCompareToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue True bLongTermMemory True } }
+			}
+			{  TargetIndex 4 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 8
+	Node_Speech 
+	{
+		Text "Sadly, it was broken, never be usable again."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 4 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+}

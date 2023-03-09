@@ -1,0 +1,98 @@
+DlgVersion 7
+DlgName "CDX_Yuri"
+DlgGuid {  A -1518135506 B 1159132761 C -255704654 D -30459135 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	NodeData ""
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	GenericData ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses { {  ParticipantName "Yuri" ParticipantClass "/Game/Widgets/W_Yuri.W_Yuri_C" } }
+Node Nodes
+{
+	// 0
+	Node_Selector 
+	{
+		SelectorType "EDlgNodeSelectorType::DlgNodeSelectorFirst"
+		OwnerName "None"
+		bCheckChildrenOnEvaluation True
+		Children
+		{
+			{
+				TargetIndex 1
+				Text "Next"
+				SpeakerState "None"
+				bIncludeInAllOptionListIfUnsatisfied True
+				Conditions { {  Strength "EDlgConditionStrength::DlgConditionStrengthStrong" ConditionType "EDlgConditionType::DlgConditionClassBoolVariable" ParticipantName "Yuri" CallbackName "Introduced" Operation "EDlgOperation::DlgEqual" CompareType "EDlgCompareType::DlgCompareToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue True bLongTermMemory True } }
+			}
+			{  TargetIndex 2 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "Yuri"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children
+		{
+			{  TargetIndex 3 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 4 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "???"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 4 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 3
+	Node_Selector 
+	{
+		SelectorType "EDlgNodeSelectorType::DlgNodeSelectorFirst"
+		OwnerName "None"
+		bCheckChildrenOnEvaluation True
+		Children { {  TargetIndex 5 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 4
+	Node_End 
+	{
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+	}
+	// 5
+	Node_Speech 
+	{
+		Text "A girl with purple hair."
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
+		Children { {  TargetIndex 4 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+}
