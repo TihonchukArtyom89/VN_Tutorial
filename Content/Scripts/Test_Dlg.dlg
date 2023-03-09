@@ -42,6 +42,7 @@ Node Nodes
 			{  ParticipantName "Yuri" EventType "EDlgEventType::DlgEventModifyBool" EventName "Visible" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
 			{  ParticipantName "Eina" EventType "EDlgEventType::DlgEventModifyBool" EventName "Visible" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
 			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyBool" EventName "Visible" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
+			{  ParticipantName "Teddy" EventType "EDlgEventType::DlgEventModifyName" EventName "Expression" IntValue 0 FloatValue 0.0 NameValue "teddy_walk_1" bDelta False bValue False }
 		}
 		Children
 		{
@@ -163,7 +164,7 @@ Node Nodes
 	// 6
 	Node_Speech 
 	{
-		Text "Also i can ducking."
+		Text "Also i can ducking. Unfortunatly that`s all."
 		SpeakerState "None"
 		bIsVirtualParent False
 		OwnerName "Teddy"
